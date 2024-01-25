@@ -1,11 +1,17 @@
-"use client";
+import { Suspense } from "react";
 import styled from "styled-components";
+import SlowComponent from "../_components/SlowComponent";
+import Loading from "./loading";
 
 export default function Dashboard() {
-  return <StyledHeader>Dashboard</StyledHeader>;
+  return (
+    <section>
+      Dashboard
+      <br />
+      <br />
+      <Suspense fallback={<Loading />}>
+        <SlowComponent />
+      </Suspense>
+    </section>
+  );
 }
-
-const StyledHeader = styled.h1`
-  color: red;
-  background-color: blue;
-`;
