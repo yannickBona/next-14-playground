@@ -1,7 +1,7 @@
 import { Suspense } from "react";
-import SlowComponent from "../_components/SlowComponent";
+import SlowComponent from "@/components/SlowComponent";
 import Loading from "./loading";
-import ErrorComponent from "../_components/ErrorComponent";
+import ErrorComponent from "@/components/ErrorComponent";
 import { ErrorBoundary } from "react-error-boundary";
 import Error from "./error";
 
