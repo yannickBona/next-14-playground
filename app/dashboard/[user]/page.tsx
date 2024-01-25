@@ -11,3 +11,7 @@ export default function Dashboard({ params }: DashboardProps) {
     </p>
   );
 }
+
+// export async function generateStaticParams() {
+//   return [1, 2, 3, 4, 5, 6, 7, 8];
+// }
